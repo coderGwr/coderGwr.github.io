@@ -3,6 +3,7 @@
 <head>
 	<title></title>
 </head>
+	
 <style>
   *{
     padding: 0;
@@ -28,7 +29,9 @@ canvas {
   color: #ccc
 }
 </style>
+	
 <body>
+	<audio id="bgmMusic" src="demo.mp3" autoplay="autoplay" loop="loop" preload="auto" type="audio/mp3"></audio>
     <canvas id="pinkboard"></canvas>
  
     <script>
@@ -38,7 +41,7 @@ canvas {
  */
 var settings = {
   particles: {
-    length:   500, // maximum amount of particles
+    length:   700, // maximum amount of particles
     duration:   2, // particle duration in sec
     velocity: 100, // particle velocity in pixels/sec
     effect: -0.75, // play with this for a nice effect
